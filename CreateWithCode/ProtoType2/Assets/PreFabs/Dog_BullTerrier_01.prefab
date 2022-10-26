@@ -3947,6 +3947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2522373676282138383}
   - component: {fileID: 2522373676276420955}
+  - component: {fileID: 271697453880641019}
   m_Layer: 0
   m_Name: SM_BullTerrier_01
   m_TagString: Untagged
@@ -4064,6 +4065,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000007450581, y: -0.02603675, z: 0.08948564}
     m_Extent: {x: 0.045073755, y: 0.10734233, z: 0.1378726}
   m_DirtyAABB: 0
+--- !u!65 &271697453880641019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522373676281858475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09014751, y: 0.21468467, z: 0.2757452}
+  m_Center: {x: -0.000000067055225, y: 0.10734232, z: -5.680368}
 --- !u!1 &2522373676281858787
 GameObject:
   m_ObjectHideFlags: 0

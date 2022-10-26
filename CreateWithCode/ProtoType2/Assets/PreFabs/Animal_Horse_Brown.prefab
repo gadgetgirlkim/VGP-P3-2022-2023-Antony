@@ -1767,6 +1767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4581885903994271772}
   - component: {fileID: 4581885903980879432}
+  - component: {fileID: 1347626752772840301}
   m_Layer: 0
   m_Name: SA_Animal_Horse_Brown
   m_TagString: Untagged
@@ -1882,6 +1883,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.8832464, z: 11.784651}
     m_Extent: {x: 5.571748, y: 18.315586, z: 21.710882}
   m_DirtyAABB: 0
+--- !u!65 &1347626752772840301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581885903994535942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.143498, y: 36.631172, z: 43.421772}
+  m_Center: {x: -32.9, y: 18.315582, z: 4.337098}
 --- !u!1 &4581885903994540008
 GameObject:
   m_ObjectHideFlags: 0
