@@ -571,9 +571,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 56682593}
-  - {fileID: 1966445408}
-  - {fileID: 1149614491}
+  - {fileID: 5396823185054608721, guid: 30f4bc8c5d09c3446b7aba1f22b159ca, type: 3}
+  - {fileID: 4581885903994492250, guid: fb6767ae60f8c1949bb9030110a36fed, type: 3}
+  - {fileID: 2522373676281856405, guid: 3c4bed178f6f8cc4697965ab57d23ba8, type: 3}
 --- !u!4 &812860039
 Transform:
   m_ObjectHideFlags: 0
