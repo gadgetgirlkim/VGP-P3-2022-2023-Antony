@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveLeft : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
-    private float speed = 15;
+    public GameObject obstaclePreFab;
+    private Vector3 spawnPos = new Vector3(25, 0, 0);
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instantiate(obstaclePreFab, spawnPos, obstaclePreFab.transform.rotation);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+        
     }
 }
