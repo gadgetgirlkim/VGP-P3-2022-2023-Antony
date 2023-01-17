@@ -227,7 +227,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820638021}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3de3d4c362e63d04eb65087696fbb394, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -484,14 +484,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211419925}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.100356884, y: -0.7395946, z: 0.11317383, w: 0.65583545}
+  m_LocalPosition: {x: 19, y: 9.66, z: -2.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1290015703}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.4, y: -96.87, z: 0}
 --- !u!1 &1290015701
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +669,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775434011}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3de3d4c362e63d04eb65087696fbb394, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
