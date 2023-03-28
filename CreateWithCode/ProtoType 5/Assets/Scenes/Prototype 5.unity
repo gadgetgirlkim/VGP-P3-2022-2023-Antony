@@ -1919,6 +1919,7 @@ MonoBehaviour:
   restartButton: {fileID: 758420786}
   titleScreen: {fileID: 2034097526}
   LivesText: {fileID: 187832645}
+  pauseScreen: {fileID: 674762824}
 --- !u!82 &1339774452
 AudioSource:
   m_ObjectHideFlags: 0
