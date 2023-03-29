@@ -51,13 +51,14 @@ public class ClickAndSwipe : MonoBehaviour
         if(collision.gameObject.GetComponent<Target>())
         {
             //Destroy Target
+            collision.gameObject.GetComponent<Target>().DestroyTarget();
         }
     }
 
 
     void UpdateMousePosition()
     {
-        mousePos = cam.ScreenToWorldPoint(new Vector3(input.mousePosition.x, input,mousePosition.y, 10.0f));
+        mousePos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f));
         transform.position = mousePos;
     }
 
