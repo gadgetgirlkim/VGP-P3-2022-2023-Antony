@@ -47,6 +47,7 @@ public class Target : MonoBehaviour
     {
         if(gameManager.isGameActive)
         {
+            Debug.Log("hit");
             Destroy(gameObject);
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             gameManager.UpdateScore(pointValue);
@@ -55,8 +56,12 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        if(!gameObject.CompareTag("Bad") && gameManager.isGameActive)
+        if (other.gameObject.name == "Sensor" ||  other.gameObject.name == "SwiperObject")
+        {
+             Destroy(gameObject);
+        }
+       
+        if(!gameObject.CompareTag("Bad") && gameManager.isGameActive && other.gameObject.name == "Sensor")
         {
             gameManager.UpdateLives(-1);
 

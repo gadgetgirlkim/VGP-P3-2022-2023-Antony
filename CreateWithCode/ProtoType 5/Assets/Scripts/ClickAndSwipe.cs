@@ -46,10 +46,11 @@ public class ClickAndSwipe : MonoBehaviour
       }  
     }
 
-    void OnCollistionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.GetComponent<Target>())
         {
+            Debug.Log("Click and Swipe collision");
             //Destroy Target
             collision.gameObject.GetComponent<Target>().DestroyTarget();
         }
