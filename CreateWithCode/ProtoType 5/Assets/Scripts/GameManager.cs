@@ -55,9 +55,9 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    public void UpdateLives(int livesToCange)
+    public void UpdateLives(int livesToChange)
     {
-        lives += livesToCange;
+        lives += livesToChange;
         LivesText.text = "Lives: " + lives;
         if (lives <= 0)
         {
