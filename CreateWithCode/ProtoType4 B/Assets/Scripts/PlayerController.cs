@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private RigidBody playerRb;
-    public float speed = 5.0f
+    private Rigidbody playerRb;
+    public float speed = 5.0f;
+    private GameObject focalPoint;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerRb = getComponent<RigidBody>();
+        playerRb = GetComponent<Rigidbody>();
+        focalPoint = GameObject.Find("Focal Point");
 
     }
 
@@ -19,6 +21,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float forwardInput = Input.GetAxis("Vertical");
-        playerRb.AddForce(Vector3.forward * speed * forwardInput);
+        playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
     }
 }
