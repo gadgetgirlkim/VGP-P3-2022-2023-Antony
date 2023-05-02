@@ -33,7 +33,7 @@ public class GameManagerX : MonoBehaviour
         score = 0;
         timeLeft = 60;
         UpdateScore(0);
-        titleScreen.SetActive(false);
+        titleScreen.SetActive(true);
     }
 
     private void Update()
