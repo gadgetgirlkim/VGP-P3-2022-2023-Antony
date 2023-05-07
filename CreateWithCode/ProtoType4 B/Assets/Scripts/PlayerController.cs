@@ -15,15 +15,15 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        focalPoint = GameObject.Find("Focal Point");
+        focalPoint = GameObject.Find("FocalPoint");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //float forwardInput = Input.GetAxis("Horizontal");
-        //playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
+        float forwardInput = Input.GetAxis("Vertical");
+        playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,14 +35,14 @@ public class PlayerController : MonoBehaviour
         }   
     }
 
-    /*private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        //if(collision.gameObject.CompareTag("Enemy") && hasPowerUp)
+        if(collision.gameObject.CompareTag("Enemy") && hasPowerUp)
         {
-            //Debug.Log("Collided with " + collision.gameObject.name + "with powerup set to " + hasPowerUp);
+            Debug.Log("Collided with " + collision.gameObject.name + "with powerup set to " + hasPowerUp);
         }
     }
-    */
+
         
     
     
